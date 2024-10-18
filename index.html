@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,21 +9,243 @@
     </head>
 <body>
     <nav id="sidebar">
-        <header>HTML:Hypertext Markup Language Tutorial</header>
+        <header>HTML: HyperText Markup Language</header>
         <ul class="contents">
-            <li><a href="#" class="nav-link">Introduction</a></li>
-            <li><a href="#" class="nav-link">Getting Started</a></li>
-            <li><a href="#" class="nav-link">HTML Basics</a></li>
-            <li><a href="#" class="nav-link">HTML Headings</a></li>
-            <li><a href="#" class="nav-link">HTML Paragraph</a></li>
-            <li><a href="#" class="nav-link">HTML Links</a></li>
-            <li><a href="#" class="nav-link">HTML Images</a></li>
-            <li><a href="#" class="nav-link">HTML List</a></li>
-            <li><a href="#" class="nav-link">HTML Forms</a></li>
-            <li><a href="#" class="nav-link">HTML Block and Inline</a></li>
-            <li><a href="#" class="nav-link">HTMLComments</a></li>
-            <li><a href="#" class="nav-link">HTML Forms</a></li>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Getting_Started" class="nav-link">Getting Started</a></li>
+            <li><a href="#HTML_Basics" class="nav-link">HTML Basics</a></li>
+            <li><a href="#HTML_Headings" class="nav-link">HTML Headings</a></li>
+            <li><a href="#HTML_Paragraph" class="nav-link">HTML Paragraph</a></li>
+            <li><a href="#HTML_Links" class="nav-link">HTML Links</a></li>
+            <li><a href="#HTML_Images" class="nav-link">HTML Images</a></li>
+            <li><a href="#HTML_Lists" class="nav-link">HTML List</a></li>
+            <li><a href="#HTML_Block_Inline" class="nav-link">HTML Block and Inline</a></li>
+            <li><a href="#HTML_Comments" class="nav-link">HTML Comments</a></li>
+            <li><a href="#References" class="nav-link">References</a></li>
         </ul>
     </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+                <p>HTML (HyperText Markup Language) is the fundamental language for creating webpages and web applications. It provides the basic structure of a webpage, 
+                    allowing developers to organize and display content such as text, images, videos, and links. HTML uses a series of elements called "tags," each enclosed in angle brackets.
+                    he main purpose of HTML is to structure information in a meaningful way, helping both browsers and users understand the content. HTML is not a programming language; rather, it is a markup language that describes the structure and layout of a webpage
+                </p>
+                <p>
+                    Each HTML document begins with a &lt;!DOCTYPE html&gt; declaration, followed by a &lt;html&gt; element that wraps the entire content. Within it, two main sections exist: &lt;head&gt;, where metadata like the title and links to stylesheets are included, and &lt;body&gt;, which contains the visible content of the page.
+                    HTML has evolved over time, with the current version being HTML5, which introduced new elements such as &lt;article&gt; , &lt;section&gt; , &lt;nav&gt; and multimedia support like &lt;audio&gt;.
+                </p>
+                why you should learn HTML? here are some points:
+                <ul>
+                    <li>HTML (HyperText Markup Language) is the core language for creating webpages.</li>
+                    <li>HTML elements include headings, paragraphs, links, images, videos, and more.</li>
+                    <li>HTML works alongside CSS for styling and JavaScript for interactivity.</li>
+                    <li>HTML is continuously evolving, with new updates improving web development.</li>
+                    <li>HTML documents can be opened and edited in any text editor or IDE.</li>
+                </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Getting_Started">
+          <header>Getting Started</header>
+          <article>
+                <p>Before you start creating your first webpage using HTML, it's important to set up few things. Here's how you can get started</p>
+                <h3>1. Choosing a Text Editor</h3>
+                 To write HTML, all you need is a basic text editor. Here are some popular options: 
+                <ul>
+                    <li><strong>Notepad (Windows)</strong>: Basic and built-in, but limited functionality.</li>
+                    <li><strong>TextEdit (Mac)</strong>: Free and built-in, ensure it's set to plain text mode.</li>
+                    <li><strong>VS Code</strong>: A free, powerful code editor with great extensions for HTML.</li>
+                    <li><strong>Sublime Text</strong>: Lightweight and customizable with useful features for coding.</li>
+                </ul>
+                Any of these editors can be used to create and edit HTML files.
+                <h3>2. Setting Up Your First HTML Document</h3>
+                <p>Once you've chosen text editor, follow these step to create your first HTML document:</p>
+                <ul>
+                    <li>Open your text editor and create a new file.</li>
+                    <li>Save the file with the extension <code>.html</code> (e.g., <em>index.html</em>).</li>
+                    <li>Copy and paste the following basic HTML template:</li>
+                </ul>
+                
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;My First Webpage&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                        &lt;p&gt;This is my first HTML webpage.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+                <h3>3. Basic HTML Structure Breakdown</h3>
+                <p>Let's break down the basic elements of the HTML file:</p>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type as HTML5.</li>
+                    <li><code>&lt;html&gt;</code>: The root element that contains all the content.</li>
+                    <li><code>&lt;head&gt;</code>: Contains metadata, like the title, and links to stylesheets or scripts.</li>
+                    <li><code>&lt;body&gt;</code>: Holds the visible content of the webpage, such as text, images, etc.</li>
+                    <li><code>&lt;h1&gt;</code>: A heading element, typically used for the main title of the page.</li>
+                    <li><code>&lt;p&gt;</code>: A paragraph element for containing blocks of text.</li>
+                </ul>
+                
+                <p>Once you're familiar with this structure, you're ready to start creating more complex webpages by adding more HTML elements!</p>
+
+          </article>
+
+        </section>
+        <section class="main-section" id="HTML_Basics">
+            <header>HTML Basics</header>
+            <article>
+                <p>HTML (HyperText Markup Language) is the core language used to structure content on the web. It consists of elements, each defined by opening and closing tags.</p>
+
+                <h3>1. HTML Elements</h3>
+                <p>An element includes a start tag, content, and an end tag, like <code>&lt;p&gt;</code> for paragraphs.</p>
+        
+                <h3>2. Attributes</h3>
+                <p>Attributes provide extra information about elements. For example, <code>&lt;a href="url"&gt;</code> defines a link.</p>
+        
+                <h3>3. Basic Structure</h3>
+                <p>HTML documents have a standard structure: <code>&lt;html&gt;</code> contains everything, <code>&lt;head&gt;</code> holds metadata, and <code>&lt;body&gt;</code> has visible content.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_Headings">
+          <header>HTML Headings</header>
+            <article>
+                <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. <code>&lt;h1&gt;</code> is the most important and largest, while <code>&lt;h6&gt;</code> is the least important and smallest.</p>
+
+                <p>Example:</p>
+                    <pre><code>&lt;h1&gt;This is a main heading&lt;/h1&gt;</code></pre>
+                     <pre><code>&lt;h2&gt;This is a subheading&lt;/h2&gt;</code></pre>
+                    <pre><code>&lt;h3&gt;This is a smaller subheading&lt;/h3&gt;</code></pre>
+            </article>
+
+
+        </section>
+        <section class="main-section" id="HTML_Paragraph">
+            <header>HTML Paragraph</header>
+            <article>
+                <p>In HTML, paragraphs are defined using the <code>&lt;p&gt;</code> tag. This tag is essential for structuring text content on a webpage, as it indicates to the browser that the enclosed text forms a distinct block. Each paragraph automatically includes space above and below it, which helps to separate it visually from other elements, making the content more readable.</p>
+                
+                <p>Paragraphs can contain various inline elements, such as links, images, and formatting tags, allowing for rich text presentation. It's important to note that using the paragraph tag not only organizes content effectively but also enhances accessibility for users with assistive technologies.</p>
+                
+                <p>Example:</p>
+                <pre><code>&lt;p&gt;This is a paragraph of text that demonstrates how to use the paragraph tag in HTML. It allows you to create clear, readable blocks of text for your webpage.&lt;/p&gt;</code></pre>
+                
+                <p>By using paragraphs appropriately, web developers can ensure that the content is both visually appealing and semantically correct.</p>
+            </article>
+        </section>
+        <section class="main-section" id="HTML_links">
+            <header>HTML Links</header>
+            <article>
+                <p>In HTML, links are created using the <code>&lt;a&gt;</code> (anchor) tag. This tag is fundamental for navigation on the web, allowing users to click and be directed to another webpage or a specific section within the same page. Links can enhance user experience by providing easy access to additional information and resources.</p>
+                
+                <p>The <code>href</code> attribute within the anchor tag specifies the URL or destination that the link points to. Additionally, you can use the <code>target</code> attribute to determine how the linked document will be displayed (e.g., in a new tab or window).</p>
+                
+                <p>Example:</p>
+                <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+                
+                <p>By using links effectively, web developers can create interconnected content that is easy to navigate, enhancing both usability and accessibility for all users.</p>
+        </section>
+        <section class="main-section" id="HTML_Images">
+            <header>HTML Images</header>
+    <article>
+        <p>Images in HTML are embedded using the <code>&lt;img&gt;</code> tag. This tag is unique because it is self-closing, meaning it does not require an end tag. The <code>src</code> attribute specifies the path to the image file, while the <code>alt</code> attribute provides alternative text that describes the image. This alternative text is crucial for accessibility, as it helps users with screen readers understand the content of the image.</p>
+        
+        <p>Images can be in various formats such as JPEG, PNG, GIF, and SVG, allowing for flexibility in design and presentation. Properly sized images enhance webpage performance, so it's essential to optimize them before uploading.</p>
+        
+        <p>Example:</p>
+        <pre><code>&lt;img src="path/to/image.jpg" alt="Description of the image"&gt;</code></pre>
+        
+        <p>In this example, the image is loaded from the specified path, and the alt text provides context for users who cannot see the image. Including descriptive alt text is not only beneficial for accessibility but also improves SEO by helping search engines understand the content of the image.</p>
+
+        <p>Here is a sample image:</p>
+        <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_640.jpg" alt="Cat-img" class="cat" />
+        </section>
+        <section class="main-section" id="HTML_Lists">
+            <header>HTML Lists</header>
+            <article>
+                <p>HTML provides two main types of lists: ordered lists and unordered lists. Both are created using specific tags that help structure the content for better readability and organization.</p>
+                
+                <p>An unordered list is defined with the <code>&lt;ul&gt;</code> tag, and each list item is marked with the <code>&lt;li&gt;</code> tag. This type of list displays bullet points for its items. On the other hand, an ordered list is defined with the <code>&lt;ol&gt;</code> tag, and it also uses the <code>&lt;li&gt;</code> tag for each item, but it displays items in a numbered format.</p>
+                
+                <p>Example of an unordered list:</p>
+                <pre><code>
+        &lt;ul&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;</code></pre>
+        
+                <p>Example of an ordered list:</p>
+                <pre><code>
+        &lt;ol&gt;
+            &lt;li&gt;First item&lt;/li&gt;
+            &lt;li&gt;Second item&lt;/li&gt;
+            &lt;li&gt;Third item&lt;/li&gt;
+        &lt;/ol&gt;</code></pre>
+        
+                
+        </section>
+        <section class="main-section" id="HTML_Block_Inline">
+            <header>HTML Block and Inline Elements</header>
+            <article>
+                <p>HTML elements can be categorized into two main types: block elements and inline elements. Understanding the difference between these two types is crucial for effective webpage layout and design.</p>
+                
+                <p>Block elements, such as <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, take up the full width of their parent container, creating a new line before and after the element. This makes them ideal for structuring larger sections of content, as they naturally stack on top of each other.</p>
+                
+                <p>Example of a block element:</p>
+                <pre><code>
+        &lt;div&gt;
+            &lt;h1&gt;Main Title&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph inside a block element.&lt;/p&gt;
+        &lt;/div&gt;</code></pre>
+        
+                <p>Inline elements, on the other hand, only take up as much width as necessary, and they do not start on a new line. Common inline elements include <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, and <code>&lt;strong&gt;</code>. They are often used within block elements to style or modify a part of the text without disrupting the flow of content.</p>
+                
+                <p>Example of an inline element:</p>
+                <pre><code>&lt;p&gt;This is a &lt;strong&gt;strong&lt;/strong&gt; word within a paragraph.&lt;/p&gt;</code></pre>
+        
+                <p>In this example, the <code>&lt;strong&gt;</code> tag makes a specific word bold without breaking the paragraph into separate lines. Understanding the distinction between block and inline elements is essential for effective web development, as it allows for better control over layout and design.</p>
+        </section>
+        <section class="main-section" id="HTML_Comments">
+            <header>HTML Comments</header>
+            <article>
+                <p>HTML comments are used to leave notes or explanations within the code that are not displayed in the browser. These comments are beneficial for documenting your code, making it easier to understand for yourself and others who may work on it later.</p>
+                
+                <p>To create a comment in HTML, you use the following syntax:</p>
+                <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+        
+                <p>Example:</p>
+                <pre><code>
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+        &lt;!-- This comment will not be displayed in the browser --&gt;
+
+        &lt;p&gt;Another paragraph.&lt;/p&gt;</code></pre>
+        
+                <p>In this example, the comment does not affect the layout or content displayed on the webpage. Using comments wisely helps maintain clean and organized code, especially in larger projects.</p>
+        </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <article>
+              <ul>
+                <li>
+                  All the documentation in this page is taken from
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    target="_blank"
+                    >MDN</a
+                  >
+                </li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3schools</a></li>
+              </ul>
+            </article> 
+        </section>
+    </main>
 </body>
 </html>
